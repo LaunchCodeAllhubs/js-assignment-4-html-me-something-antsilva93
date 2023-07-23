@@ -3,6 +3,26 @@
 
 <head>
    <title>Super Smash Brothers Melee History</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+      function openGod(evt, godName) {         
+         let tabcontent;
+         let tablinks;
+
+         tabcontent = document.getElementsByClassName("tabcontent");
+         for (let i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+         
+         tablinks = document.getElementsByClassName("tablinks");
+         for (let i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+
+         document.getElementById(godName).style.display = "block";
+         evt.currentTarget.className += " active";
+      }
+   </script>
 </head>
 
 <body>
@@ -66,7 +86,16 @@
             beaten all 5 of the Gods in tournament play.
          </p>
       </article>
-      <article>
+
+      <div class="tab">
+         <button class="tablinks" onclick="openGod(event, 'ARMADA')">ARMADA</button>
+         <button class="tablinks" onclick="openGod(event, 'HUNGRYBOX')">HUNGRYBOX</button>
+         <button class="tablinks" onclick="openGod(event, 'MANG0')">MANG0</button>
+         <button class="tablinks" onclick="openGod(event, 'MEW2KING')">MEW2KING</button>
+         <button class="tablinks" onclick="openGod(event, 'PPMD')">PPMD</button>
+      </div>
+
+      <div id="ARMADA" class="tabcontent">
          <h2>ARMADA</h2>
          <img src="/images/armada.jpg" alt ="A portrait of Armada">
          <p>
@@ -76,8 +105,9 @@
             ranked as the world #1 Player for nearly 2 years, and some even claimed Armada to be "The One True God".
             Armada went 7 years without losing a single set to anyone outside of 'the big 6'.
          </p>
-      </article>
-      <article>
+      </div>
+      
+      <div id="HUNGRYBOX" class="tabcontent">
          <h2>HUNGRYBOX</h2>
          <img src="/images/hungrybox.jpg" alt="A portrait of Hungrybox">
          <p>
@@ -86,8 +116,9 @@
             tournament wins and high placements to this day. Hungrybox is currently the highest earning Super Smash
             Player of all time.
          </p>
-      </article>
-      <article>
+      </div>
+
+      <div id="MANG0" class="tabcontent">
          <h2>MANG0</h2>
          <img src="/images/mang0.jpg" alt="A portrait of Mang0">
          <p>
@@ -98,8 +129,9 @@
             releated to Melee. Do something good? It's called "The Mang0". Buster out? also "The Mang0". He's currently
             ranked #3 in the world of active players.
          </p>
-      </article>
-      <article>
+      </div>
+
+      <div id="MEW2KING" class="tabcontent">
          <h2>MEW2KING</h2>
          <img src="images/m2k.jpg" alt="A portrait of Mew2King">
          <p>
@@ -109,8 +141,9 @@
             further than any other player; studying frame data and the technical aspects of the game. Althought he mains
             Sheik and Marth, Mew2King has arguably the largest roster of characters he can play at the highest level.
          </p>
-      </article>
-      <article>
+      </div>
+
+      <div id="PPMD" class="tabcontent">
          <h2>PPMD</h2>
          <img src="images/ppmd.jpg" alt ="A portrait of PPMD">
          <p>
@@ -120,7 +153,8 @@
             going 3-0 or 3-1 in best of 5s. Regardless of how often he played, PPMD never placed lower than 6th in his
             active years.
          </p>
-      </article>
+      </div>
+
       <article>
          <h2>The Godslayers</h2>
          <p>

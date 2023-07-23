@@ -1,1 +1,40 @@
 /* Write your CSS here! */
+body {
+    background-color: #d8bdbd;
+    margin: 8px;
+    display: block;
+    align-items: center;
+}
+
+.tab {
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: #282525;
+}
+
+.tab button {
+    background-color: : inherit;
+    float: center;
+    border: 2px solid #ccc;
+    outline: none;
+    cursor:pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 120px;
+    align: center;
+}
+
+.tab button:hover {
+    background-color: #ddd;    
+}
+
+.tab button:active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
