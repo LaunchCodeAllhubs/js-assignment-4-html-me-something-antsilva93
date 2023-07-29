@@ -1,19 +1,52 @@
 /* Write your CSS here! */
 body {
-    background-color: #d8bdbd;
+    background-color: #4f4f4f;
+    background-image: url(/images/FDBackground.jpeg);
     margin: 8px;
-    display: block;
-    align-items: center;
+    display: block;    
+    padding: 25px 125px;
+    text-align: center;
+}
+
+#mainHeading {
+    color: red;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 72px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgba(156, 135, 165, 0.616);
+}
+
+ul {
+    color: whitesmoke;
+}
+
+article {
+    background-color: #68167c46;
+    color: white;
+
+}
+
+.funParagraph {
+    color: green;
+}
+
+.godSlayer {
+    display: inline-block;
+    width: 500px;
+    height: 450px;
 }
 
 .tab {
     overflow: hidden;
-    border: 2px solid #ccc;
-    background-color: #282525;
+    border: 5px solid #090909;
+    background-color: #652c69ab;
+    width: 624px;
+    align-content: center;
 }
 
 .tab button {
-    background-color: : inherit;
+    background-color: rgba(77, 74, 70, 0.6);
     float: center;
     border: 2px solid #ccc;
     outline: none;
@@ -21,8 +54,9 @@ body {
     padding: 14px 16px;
     transition: 0.3s;
     width: 120px;
-    align: center;
-}
+    align-items: center;
+    color: whitesmoke;
+    }
 
 .tab button:hover {
     background-color: #ddd;    
@@ -35,6 +69,7 @@ body {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    border: 1px solid #ccc;    
+    color: whitesmoke;
+    background-color: #68167c46;
 }

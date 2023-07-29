@@ -5,7 +5,7 @@
    <title>Super Smash Brothers Melee History</title>
    <link rel="stylesheet" href="styles.css">
    <script>
-      function openGod(evt, godName) {         
+      function openGod(evt, godName) {
          let tabcontent;
          let tablinks;
 
@@ -13,7 +13,7 @@
          for (let i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
          }
-         
+
          tablinks = document.getElementsByClassName("tablinks");
          for (let i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
@@ -27,9 +27,9 @@
 
 <body>
    <header>
-      <h1>The History of Melee</h1>
+      <h1 id="mainHeading">THE HISTORY OF MELEE</h1>
       <nav>
-         <ul>
+         <ul id="pLinks">
             <li>Human Beings in a Mob</li>
             <li>What's a Mob to a King?</li>
             <li>What's a King to a God?</li>
@@ -52,7 +52,7 @@
             "ChuDat" Rodriquez, Joel "Isai" Alvarado, and Jason "Mew2King" Zimmeran. These players were the dominating
             force in the early years of Melee, but were all surpassed by a single player: Ken Hoang.
          </p>
-         <img src = "images/meleecover.jpg" alt = "The cover art for Super Smash Brothers Melee.">
+         <img src="images/meleecover.jpg" alt="The cover art for Super Smash Brothers Melee.">
       </article>
       <article>
          <h2>The King of Smash</h2>
@@ -66,7 +66,7 @@
             series was released, and Nintendo even banned livestreaming the Smash Brothers line. Ken retired from
             professional play in 2008, and still is involved in the competitve scene today.
          </p>
-         <img src = "/images/ken.jpg" alt = "A portrait of Ken">
+         <img src="/images/ken.jpg" alt="A portrait of Ken">
       </article>
       <article>
          <h2>The Era of the 5 Gods</h2>
@@ -97,7 +97,7 @@
 
       <div id="ARMADA" class="tabcontent">
          <h2>ARMADA</h2>
-         <img src="/images/armada.jpg" alt ="A portrait of Armada">
+         <img src="/images/armada.jpg" alt="A portrait of Armada">
          <p>
             Adam Lingren is a retired player from Sweden. He broke out on the scene as a Peach player, and singlehandly
             got her placed into the high end of the tier list. Nicknamed the "Swedish Sniper" due to his use of Peach's
@@ -106,11 +106,11 @@
             Armada went 7 years without losing a single set to anyone outside of 'the big 6'.
          </p>
       </div>
-      
+
       <div id="HUNGRYBOX" class="tabcontent">
          <h2>HUNGRYBOX</h2>
          <img src="/images/hungrybox.jpg" alt="A portrait of Hungrybox">
-         <p>
+         <p class="funParagraph" id="testP">
             Hungrybox rose to fame as the best Jigglypuff in the world. His first Major win was Apex 2010, in which he
             defeated Armada. Hungrybox has shown the longest consistency amongst the 5 gods, and is still taking
             tournament wins and high placements to this day. Hungrybox is currently the highest earning Super Smash
@@ -145,7 +145,7 @@
 
       <div id="PPMD" class="tabcontent">
          <h2>PPMD</h2>
-         <img src="images/ppmd.jpg" alt ="A portrait of PPMD">
+         <img src="images/ppmd.jpg" alt="A portrait of PPMD">
          <p>
             Previously Dr. PeePee, PPMD is by far the least active of the 5 gods. A Falco and Marth player, PPMD was
             known for his quality over his quantity. Some questioned his status of Melee God with how little he played
@@ -163,10 +163,12 @@
             before the end of the tournament. Over time, the gap between the best and the next grew smaller and smaller.
             Notably, a few players got close. Wobbles, Axe, Westballz, SFAT, ChuDat, and a host of other players all
             claimed victory over three or four of the Gods, but none were able to take them all down. Finally, at Apex
-            2015, one player took a set over his 5th and final player - William "Leffen" Hjelte. Two years later, at The Big House 7, Justin "Plup" McGrath defeated Armada to become the second and final player to defeat the 5 Gods.
+            2015, one player took a set over his 5th and final player - William "Leffen" Hjelte. Two years later, at The
+            Big House 7, Justin "Plup" McGrath defeated Armada to become the second and final player to defeat the 5
+            Gods.
          </p>
       </article>
-      <article>
+      <article class="godSlayer">
          <h2>LEFFEN</h2>
          <img src="images/leffen.jpg" alt="A portrait of Leffen">
          <p>
@@ -174,38 +176,56 @@
             became both someone to watch. He was considered a player who was aggressive, toxic, having poor
             sportsmanship, and even accused of being a bully. Despite all of this, his talent could not be disregarded.
             He did what many thought to be impossible, and cemented himself in the history of the game. Leffen
-            marked the beginning of the end of the Era of the 5 Gods. There were disputes if he were a Melee God, and in the end
+            marked the beginning of the end of the Era of the 5 Gods. There were disputes if he were a Melee God, and in
+            the end
             the community dubbed him "The Godslayer".
          </p>
-         <article>
-            <h2>PLUP</h2>
-            <img src="images/plup.jpg" alt="A portrait of plup">
-            <p>
-               Plup's original claim to fame was "Hungrybox's Teammate", as the two of them teamed up for years in the doubles bracket. Team "Plupbox" has placed consistently high for over a decade. He sat in the tier just below the Big 6 for most of the 5 Gods Era, and in 2017 he rose to their level. He claimed his first major tournament victory at DreamHack Atlanta, and then at The Big House 7 he defeated his last god Armada in winners semis; being the first person to beat Armada outside of the big 6 in seven years.
-            </p>
-         </article>
-         <article>
-            <h2>The Chaos Age</h2>
-            <p>
-               The game was changing, and the community felt the Era of the 5 gods coming to an end. Some say it was Leffen defeated his final God and PPMD had his last major victory in 205, others when Plup claimed his victory over Armada in 2017, others still when Armada and Mew2King retired in 2018. Another common opinion is that while any of the Gods are still active the era is not over. In 2016, PPMD went on an indefinite Hiatus from the game, and in 2018 Armada and Mew2King retired from professional play. HungryBox and Mang0 still play to this day, and many new names are now at the top. The current Era, beginning in 2018, is dubbed "The Chaos Age". The amount of players at the top has grown substancially; with no players dominating in the same way as the Ken or the Big 6. In 2021, the MeleeStats organization released their list of the top 100 players of all time for the game's 20th anniversay of release. With an in depth criteria and a sizeable voting panel, they recognized the players who have paved the way for the competitive play for Super Smash Brothers Melee. Ultimately, this top 10 was their final destination:
-               <div>
-                  <ol>
-                     <li>Plup</li>
-                     <li>Zain</li>
-                     <li>Azen</li>
-                     <li>PPMD</li>
-                     <li>Leffen</li>
-                     <li>Mew2King</li>
-                     <li>Ken</li>
-                     <li>Hungrybox</li>
-                     <li>Armada</li>
-                     <li>Mango</li>
-                  </ol>
-               </div>
-            </p>
-         </article>
+      </article>
+      <article class="godSlayer">
+         <h2>PLUP</h2>
+         <img src="images/plup.jpg" alt="A portrait of plup">
+         <p>
+            Plup's original claim to fame was "Hungrybox's Teammate", as the two of them teamed up for years in the
+            doubles bracket. Team "Plupbox" has placed consistently high for over a decade. He sat in the tier just
+            below the Big 6 for most of the 5 Gods Era, and in 2017 he rose to their level. He claimed his first major
+            tournament victory at DreamHack Atlanta, and then at The Big House 7 he defeated his last god Armada in
+            winners semis; being the first person to beat Armada outside of the big 6 in seven years.
+         </p>
+      </article>
+      <article>
+         <h2>The Chaos Age</h2>
+         <p>
+            The game was changing, and the community felt the Era of the 5 gods coming to an end. Some say it was Leffen
+            defeated his final God and PPMD had his last major victory in 205, others when Plup claimed his victory over
+            Armada in 2017, others still when Armada and Mew2King retired in 2018. Another common opinion is that while
+            any of the Gods are still active the era is not over. In 2016, PPMD went on an indefinite Hiatus from the
+            game, and in 2018 Armada and Mew2King retired from professional play. HungryBox and Mang0 still play to this
+            day, and many new names are now at the top. The current Era, beginning in 2018, is dubbed "The Chaos Age".
+            The amount of players at the top has grown substancially; with no players dominating in the same way as the
+            Ken or the Big 6. In 2021, the MeleeStats organization released their list of the top 100 players of all
+            time for the game's 20th anniversay of release. With an in depth criteria and a sizeable voting panel, they
+            recognized the players who have paved the way for the competitive play for Super Smash Brothers Melee.
+            Ultimately, this top 10 was their final destination:
+         <div>
+            <ol>
+               <li>Plup</li>
+               <li>Zain</li>
+               <li>Azen</li>
+               <li>PPMD</li>
+               <li>Leffen</li>
+               <li>Mew2King</li>
+               <li>Ken</li>
+               <li>Hungrybox</li>
+               <li>Armada</li>
+               <li>Mango</li>
+            </ol>
+         </div>
+         </p>
+      </article>
    </main>
 
-   <footer><em>&quot;And remember: if we ever do get to go head to head, please, No Johns&quot;</em> - Reggie Fils-Aime&#769;</footer>
+   <footer><em>&quot;And remember: if we ever do get to go head to head, please, No Johns&quot;</em> - Reggie
+      Fils-Aime&#769;</footer>
 </body>
+
 </html>
