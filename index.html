@@ -1,8 +1,231 @@
 <!DOCTYPE html>
 <html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+
+<head>
+   <title>Super Smash Brothers Melee History</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+      function openGod(evt, godName) {
+         let tabcontent;
+         let tablinks;
+
+         tabcontent = document.getElementsByClassName("tabcontent");
+         for (let i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+
+         tablinks = document.getElementsByClassName("tablinks");
+         for (let i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+
+         document.getElementById(godName).style.display = "block";
+         evt.currentTarget.className += " active";
+      }
+   </script>
+</head>
+
+<body>
+   <header>
+      <h1 id="mainHeading">THE HISTORY OF MELEE</h1>
+      <nav>
+         <ul id="pLinks">
+            <li>Human Beings in a Mob</li>
+            <li>What's a Mob to a King?</li>
+            <li>What's a King to a God?</li>
+            <li>What's a God to a Non-Believer?</li>
+            <li>Who don't believe in anything?</li>
+         </ul>
+      </nav>
+   </header>
+   <!-- Write your HTML in this file! -->
+   <main>
+      <article>
+         <h2>The Early Years</h2>
+         <p>
+            Super Smash Brothers Melee was released by Nintendo on December 3rd, 2001. Like many video games, it was
+            rushed through to proudction and released way before intended. The game was well received and critically
+            acclaimed, despite all the bugs that came with the hurried release. It's fast-paced aggressive gameplay,
+            paired with a unique playstyle for fighting games, a competitive scene quickly began to grow around the
+            game. The scene was primarily based around playing 1 v 1, and did have a small 2 v 2 scene as well. Some
+            players began to seperate themselves as the best players of Melee; Christopher "Azen" McMullen, Daniel
+            "ChuDat" Rodriquez, Joel "Isai" Alvarado, and Jason "Mew2King" Zimmeran. These players were the dominating
+            force in the early years of Melee, but were all surpassed by a single player: Ken Hoang.
+         </p>
+         <img src="images/meleecover.jpg" alt="The cover art for Super Smash Brothers Melee.">
+      </article>
+      <article>
+         <h2>The King of Smash</h2>
+         <p>
+            From the game's release to 2007, Ken was widely considered the best player in the world for Melee. He joined
+            the scene in 2003, with his competitive tag "SephirothKen". For the next few years, Ken was almost
+            unbeatable. He won almost every tournament he entered, and only placed as low as 9th. He also teamed up with
+            Isai for doubles, where they went over 2 years undefeated when teamed up. His dominance earned him the
+            epitath "The King of Smash". Unfortunately, in the late 2000s Melee's competitive scene became stagnant.
+            Major League Gaming dropped melee from it's active roster (Super Smash Brothers Brawl) the next game in the
+            series was released, and Nintendo even banned livestreaming the Smash Brothers line. Ken retired from
+            professional play in 2008, and still is involved in the competitve scene today.
+         </p>
+         <img src="/images/ken.jpg" alt="A portrait of Ken">
+      </article>
+      <article>
+         <h2>The Era of the 5 Gods</h2>
+         <p>
+            2008 to 2013 is remembered as "The Dark Age" of competitive Smash Brothers. The fanbase was split between
+            games that weren't allowed to be streamed. However, Evolution Championship Series (The largest fighting game
+            tournament, also known as EVO) held a charity drive in 2013 to determine the final game to be added to the
+            roster. The winner? Melee. The fans raised over $94,000 to get their game back in the public eye, and broke
+            the record at the time for largest Melee tournament with 709 entrants; over double the previous record.
+            Despite Nintendo trying to ban its stream, the tournament sparked the revival of Melee, and the scene began
+            to grow larger than ever before. The event was won by Joseph "Mang0" Marquez, with a thrilling losers
+            bracket run where he only dropped one game in his last 3 matches; knocking out Robert "Wobbles" Wright, Juan
+            "Hungrybox" Debiedma, Adam "Armanda" Lingren, Kevin "Dr. PeePee" Nanney, and Mew2King, who had kept with the
+            scene since the early days. Apart from Wobbles, these 5 players rose above the rest. For 5 years, virtually
+            every tournament was won by one of these players. They were resilient to not drop sets to anyone outside of
+            themselves, to the point where taking a set off of them was an acheivement. To this day, only 2 players have
+            beaten all 5 of the Gods in tournament play.
+         </p>
+      </article>
+
+      <div class="tab">
+         <button class="tablinks" onclick="openGod(event, 'ARMADA')">ARMADA</button>
+         <button class="tablinks" onclick="openGod(event, 'HUNGRYBOX')">HUNGRYBOX</button>
+         <button class="tablinks" onclick="openGod(event, 'MANG0')">MANG0</button>
+         <button class="tablinks" onclick="openGod(event, 'MEW2KING')">MEW2KING</button>
+         <button class="tablinks" onclick="openGod(event, 'PPMD')">PPMD</button>
+      </div>
+
+      <div id="ARMADA" class="tabcontent">
+         <h2>ARMADA</h2>
+         <img src="/images/armada.jpg" alt="A portrait of Armada">
+         <p>
+            Adam Lingren is a retired player from Sweden. He broke out on the scene as a Peach player, and singlehandly
+            got her placed into the high end of the tier list. Nicknamed the "Swedish Sniper" due to his use of Peach's
+            Turnips. He won many majors, including an undefeated run from EVO 2015 to DreamHack Winter 2016. He was
+            ranked as the world #1 Player for nearly 2 years, and some even claimed Armada to be "The One True God".
+            Armada went 7 years without losing a single set to anyone outside of 'the big 6'.
+         </p>
+      </div>
+
+      <div id="HUNGRYBOX" class="tabcontent">
+         <h2>HUNGRYBOX</h2>
+         <img src="/images/hungrybox.jpg" alt="A portrait of Hungrybox">
+         <p class="funParagraph" id="testP">
+            Hungrybox rose to fame as the best Jigglypuff in the world. His first Major win was Apex 2010, in which he
+            defeated Armada. Hungrybox has shown the longest consistency amongst the 5 gods, and is still taking
+            tournament wins and high placements to this day. Hungrybox is currently the highest earning Super Smash
+            Player of all time.
+         </p>
+      </div>
+
+      <div id="MANG0" class="tabcontent">
+         <h2>MANG0</h2>
+         <img src="/images/mang0.jpg" alt="A portrait of Mang0">
+         <p>
+            Messi. Jordan. Federer. Mang0. Mang0 is widely considered the Greatest Of All Time as far as Melee goes. An
+            active player from 2007-Present, Mang0 has a multitude of major wins over all the players on this list. He
+            started off as a Jigglypuff main, and after a brief hiatus in the Dark Age came back to dominate the scene
+            once more as Fox and Falco, also known as the "spacies". His name has become synonmous with almost anything
+            releated to Melee. Do something good? It's called "The Mang0". Buster out? also "The Mang0". He's currently
+            ranked #3 in the world of active players.
+         </p>
+      </div>
+
+      <div id="MEW2KING" class="tabcontent">
+         <h2>MEW2KING</h2>
+         <img src="images/m2k.jpg" alt="A portrait of Mew2King">
+         <p>
+            Mew2King is one of the longest standing players of Melee, and the entire series as a whole. Nicknamed "the
+            Robot", he rose to the top with his extremely technical and intelligent play style. He was ranked #1 in the
+            world in Brawl for years, while maintaining his status as a Melee God. He pushed the frontier of the game
+            further than any other player; studying frame data and the technical aspects of the game. Althought he mains
+            Sheik and Marth, Mew2King has arguably the largest roster of characters he can play at the highest level.
+         </p>
+      </div>
+
+      <div id="PPMD" class="tabcontent">
+         <h2>PPMD</h2>
+         <img src="images/ppmd.jpg" alt="A portrait of PPMD">
+         <p>
+            Previously Dr. PeePee, PPMD is by far the least active of the 5 gods. A Falco and Marth player, PPMD was
+            known for his quality over his quantity. Some questioned his status of Melee God with how little he played
+            compared to most players, however he shined the most against the other Gods. Many of his victories came as
+            going 3-0 or 3-1 in best of 5s. Regardless of how often he played, PPMD never placed lower than 6th in his
+            active years.
+         </p>
+      </div>
+
+      <article>
+         <h2>The Godslayers</h2>
+         <p>
+            Over the era of the 5 Gods, other players marked their acheivements when the defeated one in tournament
+            play. Many players were able to take down one of the 5 in hard fought sets, only to be swept by the rest
+            before the end of the tournament. Over time, the gap between the best and the next grew smaller and smaller.
+            Notably, a few players got close. Wobbles, Axe, Westballz, SFAT, ChuDat, and a host of other players all
+            claimed victory over three or four of the Gods, but none were able to take them all down. Finally, at Apex
+            2015, one player took a set over his 5th and final player - William "Leffen" Hjelte. Two years later, at The
+            Big House 7, Justin "Plup" McGrath defeated Armada to become the second and final player to defeat the 5
+            Gods.
+         </p>
+      </article>
+      <article class="godSlayer">
+         <h2>LEFFEN</h2>
+         <img src="images/leffen.jpg" alt="A portrait of Leffen">
+         <p>
+            Leffen - the Villian of Super Smash Brothers. As he rose to the top levels of play, Leffen
+            became both someone to watch. He was considered a player who was aggressive, toxic, having poor
+            sportsmanship, and even accused of being a bully. Despite all of this, his talent could not be disregarded.
+            He did what many thought to be impossible, and cemented himself in the history of the game. Leffen
+            marked the beginning of the end of the Era of the 5 Gods. There were disputes if he were a Melee God, and in
+            the end
+            the community dubbed him "The Godslayer".
+         </p>
+      </article>
+      <article class="godSlayer">
+         <h2>PLUP</h2>
+         <img src="images/plup.jpg" alt="A portrait of plup">
+         <p>
+            Plup's original claim to fame was "Hungrybox's Teammate", as the two of them teamed up for years in the
+            doubles bracket. Team "Plupbox" has placed consistently high for over a decade. He sat in the tier just
+            below the Big 6 for most of the 5 Gods Era, and in 2017 he rose to their level. He claimed his first major
+            tournament victory at DreamHack Atlanta, and then at The Big House 7 he defeated his last god Armada in
+            winners semis; being the first person to beat Armada outside of the big 6 in seven years.
+         </p>
+      </article>
+      <article>
+         <h2>The Chaos Age</h2>
+         <p>
+            The game was changing, and the community felt the Era of the 5 gods coming to an end. Some say it was Leffen
+            defeated his final God and PPMD had his last major victory in 205, others when Plup claimed his victory over
+            Armada in 2017, others still when Armada and Mew2King retired in 2018. Another common opinion is that while
+            any of the Gods are still active the era is not over. In 2016, PPMD went on an indefinite Hiatus from the
+            game, and in 2018 Armada and Mew2King retired from professional play. HungryBox and Mang0 still play to this
+            day, and many new names are now at the top. The current Era, beginning in 2018, is dubbed "The Chaos Age".
+            The amount of players at the top has grown substancially; with no players dominating in the same way as the
+            Ken or the Big 6. In 2021, the MeleeStats organization released their list of the top 100 players of all
+            time for the game's 20th anniversay of release. With an in depth criteria and a sizeable voting panel, they
+            recognized the players who have paved the way for the competitive play for Super Smash Brothers Melee.
+            Ultimately, this top 10 was their final destination:
+         <div>
+            <ol>
+               <li>Plup</li>
+               <li>Zain</li>
+               <li>Azen</li>
+               <li>PPMD</li>
+               <li>Leffen</li>
+               <li>Mew2King</li>
+               <li>Ken</li>
+               <li>Hungrybox</li>
+               <li>Armada</li>
+               <li>Mango</li>
+            </ol>
+         </div>
+         </p>
+      </article>
+   </main>
+
+   <footer><em>&quot;And remember: if we ever do get to go head to head, please, No Johns&quot;</em> - Reggie
+      Fils-Aime&#769;</footer>
+</body>
+
 </html>
